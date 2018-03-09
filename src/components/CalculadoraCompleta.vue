@@ -6,7 +6,7 @@
 		  </section>
 		  <section class="teclado" >
 			<button class="tecla" @click=""> c </button>
-			<button class="tecla" @click=""> m </button>
+			<button class="tecla" @click="">+/-</button>
 			<button class="tecla" @click=""> % </button>
 			<button class="tecla" @click="setOp('/')"> / </button>
 			<button class="tecla" @click="write('7')"> 7 </button>
@@ -22,8 +22,8 @@
 			<button class="tecla" @click="write('3')"> 3 </button>
 			<button class="tecla" @click="setOp('+')"> + </button>
 			<button class="tecla" @click="write('0')"> 0 </button>
-			<button class="tecla" @click="write(',')"> , </button>
-			<button class="tecla" @click="">+/-</button>
+			<button class="tecla" @click="write(' ')">   </button>
+			<button class="tecla" @click=""> , </button>
 			<button class="tecla" @click=""> = </button>
 		  </section>
 	    </main>
@@ -62,28 +62,33 @@ export default{
 .principal{
 	width: 100%;
 	height: 100vh;
-	background: #00FFFF;
+	background: #FF00FF;
 	background-size: 100%;
     padding: 10px;
-    margin:;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .menu{
 	width: 300px;
-	height: 70vh;
-	background-color: #66CDAA;
+	height: 63.3vh;
+	background-color: #FFF;
 	justify-content: space-around;
-	align-content: space-between; 
+
 }
 .teclado{
 	display: flex;
 	flex-wrap: wrap;
+	align-content:;
+	align-items: flex-end;
 }
 .tecla{
 	width: 75px;
-	height: 75px;
+	height: 80px;
+	font-size: 20px;
+	margin:;
+	padding:; 
+	border-style: solid;
 }
 	
 </style>
