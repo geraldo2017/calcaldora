@@ -1,13 +1,13 @@
 <template>
 		<div class="principal">
 			<section>
-				<h1>Preencha o seu CEP</h1>
+				<h1 class="cabecalho">Preencha o CEP</h1>
 			</section>
 			<section>
-				<p>CEP:</p><input v-model="CEP" type="number" name="CEP" @keyup.enter="getData">
-				<p>Rua:</p><input v-model="Rua" type="letter" name="Rua">
-				<P>Cidade:</p><input v-model="Cidade" type="letter" name="Cidade">
-				<p>UF:</p><input v-model="UF" type="letter" name="UF">
+				<p>CEP:</p><input v-model="cep" type="number" name="CEP" @keyup.enter="getData()">
+				<p>Rua:</p><input v-model="rua" type="letter" name="Rua">
+				<p>Cidade:</p><input v-model="cidade" type="letter" name="Cidade">
+				<p>UF:</p><input v-model="uf" type="letter" name="UF">
 			</section>
 			<button>Enviar</button>
 		</div>
@@ -40,6 +40,20 @@ export default {
 </script>
 <style>
 .principal{
+	width: 100%;
+	height: 100vh;
+	background: #808080;
+	background-size: 100%;
+	margin: 0;
+    padding: 5px;
+    flex-direction: column;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-items:center;
 
     }
+.cabecalho{
+	color: #fff; 
+}
 </style>
